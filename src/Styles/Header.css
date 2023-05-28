@@ -1,0 +1,27 @@
+#Header {
+  background-color: rgba(0, 0, 0, 0.822);
+  width: auto;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#logoR {
+  max-width: 712px;
+  max-height: 266px;
+}
+
+/*480px para celulares*/
+/*768px para tablets*/
+/*1024px para laptops*/
+
+@media (max-width: 1024px) {
+  #Header{
+    height: auto;
+    width: auto;
+  }
+  #logoR{
+    height: auto;
+    width: auto;
+  }
+}

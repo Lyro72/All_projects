@@ -1,0 +1,151 @@
+#Bod1 {
+  background-color: white;
+  width: auto;
+  height: 550px;
+  display: flex;
+}
+.allimgs{
+  background-color: #ffff;
+  display: grid;
+  margin-left: 200px;
+  margin-top: 50px;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  justify-content: space-around;
+}
+.allimg{
+  height: 125px;
+  width: 125px;
+  margin: 10px;
+  border-radius: 3px;
+}
+.muestra{
+  background-color: #ffff;
+  display: flex;
+  margin-left: 165px;
+  margin-top: 80px;
+}
+.png{
+  height: 250px;
+  width: 250px;
+  margin: 20px;
+  border-radius: 5px;
+}
+.selector {
+  background-color: rgba(235, 235, 235, 0.836);
+  display: flex;
+  justify-content: flex-start;
+  width: 250px;
+  height: auto;
+  text-align:initial;
+}
+.selector ul {
+  list-style: none;
+  padding: 0px;
+  width: 250px;
+}
+.selector ul li button{
+  background-color: transparent;
+  height: 45px;
+  width: 250px;
+  text-align: start;
+  font-size: large;
+  color: black;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.selector h2 button{
+  background-color: transparent;
+  height: 80px;
+  width: 250px;
+  text-align: start;
+  color: black;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.selector ul li:hover {
+  background: linear-gradient(to left, white, rgba(25, 148, 230, 0.897));
+}
+.selector h2 button:hover{
+  background: linear-gradient(to left, white, rgba(25, 148, 230, 0.897));
+}
+
+/*480px para celulares*/
+/*768px para tablets*/
+/*1024px para laptops*/
+
+@media (max-width: 1030px) {
+  #Bod1 {
+    height: auto;
+  }
+  .allimgs {
+    margin-left: 10px;
+  }
+  .muestra {
+    margin: 0px 10px;
+  }
+  .png {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media (max-width: 770px) {
+  .muestra {
+    flex-direction: column;
+  }
+  .png {
+    height: 150px;
+    width: 150px;
+  }
+  .allimgs{
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 485px) {
+  .selector {
+    z-index: 2;
+    position: relative;
+    background-color: rgb(235, 235, 235);
+    width: 400px;
+  }
+  .selector ul {
+    width: 400px;
+  }
+  .selector ul li button {
+    width: 400px;
+    margin-left: 40px;
+  }
+  .titulo {
+    margin-left: 40px;
+  }
+  .selector h2 button{
+    width: 400px;
+    height: 100px;
+  }
+  .muestra {
+    z-index: 3;
+    position: relative;
+    margin-left: -370px;
+    width: 370px;
+  }
+  .allimgs {
+    display: none;
+  }
+  #nhover:hover {
+    background: none;
+  }
+  #reset {
+    background: linear-gradient(to right, white 30%, rgba(25, 148, 230, 0.897) );
+    color: white;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .selector {
+    width: auto;
+  }
+}

@@ -1,0 +1,257 @@
+#Bod2 {
+  background-color: white;
+  height: 550px;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+#flex-layout {
+  display: table-column;
+  height: 550px;
+}
+#historia {
+  font-family:'Times New Roman', Times, serif;
+  color: black;
+  text-align:justify;
+  height: 150px;
+  padding: 5px;
+  font-size:larger;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+#medio {
+  margin-left: 400px;
+  display: flex;
+}
+.mid {
+  height: 210px;
+  width: 160px;
+  margin: 5px;
+}
+#valores {
+  padding: 0px;
+  color: black;
+  font-family:'Times New Roman', Times, serif;
+  text-align:unset;
+  font-size: larger;
+}
+#valores ul {
+  list-style:none;
+}
+#valores h2 {
+  margin: 0px 0px 0px 30px
+}
+#mision {
+  padding: 0px;
+  color: black;
+  font-family:'Times New Roman', Times, serif;
+  text-align:left;
+  font-size: larger;
+}
+#mision h2 {
+  margin: 0px 0px 0px 30px;
+  padding-top: 30px;
+}
+#vision {
+  padding: 0px;
+  color: black;
+  font-family:'Times New Roman', Times, serif;
+  text-align:left;
+  font-size: larger;
+}
+#vision h2 {
+  margin: 0px 0px 0px 30px
+}
+.down{
+  margin-left: 450px;
+  height: 75px;
+  width: 400px;
+}
+#logo {
+  padding: 10px;
+  color: black; 
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+}
+#valogo {
+  margin: 0 50px;
+  height: 25%;
+  width: 25%;
+}
+#misilogo {
+  margin: 0 50px;
+  height: 13%;
+  width: 13%;
+}
+#visilogo {
+  margin: 0 50px;
+  height: 28%;
+  width: 28%;
+}
+.valores div h2 {
+  justify-content: baseline;
+}
+.cubo:hover {
+  box-shadow: -7px -7px 5px 2px rgba(226, 226, 226, 0.842);
+}
+
+/*480px para celulares*/
+/*768px para tablets*/
+/*1024px para laptops*/
+
+@media (max-width: 1030px) {
+  #Bod2 {
+    height: auto;
+  }
+  #flex-layout {
+    width: auto;
+    height: auto;
+  }
+  #historia {
+    width: auto;
+    height: auto;
+    margin: 0px;
+  }
+  #medio {
+    margin-left: 250px;
+  }
+  .down{
+    margin-left: 290px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  #medio {
+    margin-left: 110px;
+  }
+  .down{
+    margin-left: 150px;
+  }
+}
+@media (max-width: 480px) {
+  #historia {
+    font-size: medium;
+    padding-right: 25px;
+  }
+  #medio {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  #valores {
+    font-size: small;
+    padding: 2px;
+    width: 100px;
+  }
+  #valores ul {
+    padding: 0px;
+  }
+  #valores h2 {
+    margin: 0px;
+  }
+  #valogo {
+    margin-left: 15px;
+  }
+  #mision {
+    padding: 2px;
+    font-size: small;
+    width: 120px;
+  }
+  #mision h2 {
+    margin-left: 0px;
+  }
+  #vision {
+    padding: 2px;
+    font-size: small;
+  }
+  #vision h2 {
+    margin-left: 0px;
+  }
+  .down{
+    margin-left: 5px;
+  }
+}
+@media (max-width: 380px) {
+  #historia {
+    padding-right: 65px;
+  }
+  #vision {
+    width: 120px;
+  }
+  .down {
+    margin: 0px;
+  }
+  #logo {
+
+    padding-left: 5px;
+  }
+  #logo h3 {
+    text-align: start;
+    font-weight: normal;
+  }
+  #logo h2 {
+    text-align: start;
+  }
+}
+@media (max-width: 330px) {
+  #historia {
+    padding-right: 110px;
+  }
+  #medio {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 80px;
+    margin-top: 15px;
+  }
+  .mid {
+    height: auto;
+    width: 160px;
+    margin: 5px;
+  }
+  #valores {
+    padding: 0px;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    text-align:unset;
+    font-size: medium;
+  }
+  #valores ul {
+    list-style:none;
+  }
+  #valores h2 {
+    margin: 0px 0px 0px 0px
+  }
+  #mision {
+    padding: 0px;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    text-align:left;
+    font-size: medium;
+  }
+  #mision h2 {
+    margin: 0px 0px 0px 0px;
+    padding-top: 30px;
+  }
+  #vision {
+    padding: 0px;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    text-align:left;
+    font-size: medium;
+  }
+  #vision h2 {
+    margin: 0px 10px 0px 0px
+  }
+  #logo h3 {
+    font-weight: lighter;
+    font-size: medium;
+  }
+  #misilogo {
+    margin-left: 0px;
+  }
+  #visilogo {
+    margin-left: 0px;
+  }
+  #valogo {
+    margin-left: 0px;
+  }
+}

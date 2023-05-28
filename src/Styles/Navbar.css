@@ -1,0 +1,91 @@
+#Navbar {
+  background-color: rgba(25, 148, 230, 0.897);
+  width: auto;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#menu {
+  list-style-type: none;
+  padding: 0%;
+  width: 70%;
+}
+.el {
+  display: inline;
+}
+.el button {
+  width: 30%;
+  background-color: rgba(25, 148, 230, 0.0);
+  border: none;
+  height: 100px;
+  margin: 2px;
+  color: white;
+  font-size: larger;
+}
+.l {
+  display: inline-block;
+  width: 1px;
+  height: 25px;
+  background-color: white;
+  font-size: x-small;
+  color: white;
+}
+.el button:hover {
+  background: radial-gradient(white, rgba(25, 148, 230, 0.897));
+  color: rgba(25, 148, 230, 0.897);
+  transition: width 1s;
+  width: 380px;
+}
+
+/*480px para celulares*/
+/*770px para tablets*/
+/*1024px para laptops*/
+
+@media (min-width: 1200px) {
+  .el button {
+    font-size: large;
+  }
+  .el button:hover {
+    background: radial-gradient(white, rgba(25, 148, 230, 0.897));
+    color: rgba(25, 148, 230, 0.897);
+    transition: width 1s;
+    width: 350px;
+  }
+}
+@media (max-width: 1024px) {
+  .el button {
+    font-size: large;
+  }
+  .el button:hover {
+    background: radial-gradient(white, rgba(25, 148, 230, 0.897));
+    color: rgba(25, 148, 230, 0.897);
+    transition: width 1s;
+    width: 250px;
+  }
+}
+@media (max-width: 770px) {
+  .el button {
+    font-size: medium;
+  }
+  .el button:hover {
+    background: radial-gradient(white, rgba(25, 148, 230, 0.897));
+    color: rgba(25, 148, 230, 0.897);
+    transition: none;
+    width: 30%;
+  }
+}
+@media (max-width: 480px) {
+  .el button {
+    border: 2px solid white;
+    padding: 2px;
+  }
+  .l {
+    opacity: 0.0;
+  }
+}
+@media (max-width: 398px) {
+  .el button {
+    border: none;
+  }
+}
